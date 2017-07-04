@@ -25,7 +25,7 @@ public class MetricsForwarderController {
 					StringBuilder builder = new StringBuilder();
 					String metricName = "spring_"
 							+ metric.getName().replace("-", "_").replace(".", "_");
-					builder.append(metricName).append("{").append("application_index=\"")
+					builder.append(metricName).append("{").append("application_id=\"")
 							.append(applicationId).append("\",")
 							.append("application_instance_index=\"").append(instanceIndex)
 							.append("\",").append("application_instance_id=\"")
